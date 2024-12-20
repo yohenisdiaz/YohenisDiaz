@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+
+<!-- Cabecera del HTML. esto se ejecuta primero -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presentacion interactiva del zoologico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Cuerpo o body. es todo el contenido de la pagina -->
+<body>
+    <header>
+        
+		<h2>los fundamentos de la fotografía en zoologicos</h2>
+		
+        
+		<p>haz clic en cada imagen para ver más informacion:</p>
+		
+    </header>
+
+    <main>
+        <!-- caja 1 -->
+        <div class="caja" onclick="openmodal('modal1')">
+            <h2>1-> animales cuidado y bienestar</h2>
+            <img src="images/animales-cuidado-y-bienestar.jpg" alt="animales cuidado y bienestar">
+        </div>
+
+        <!-- caja 2 -->
+        <div class="caja" onclick="openmodal('modal2')">
+            <h2>2-> niño con elefante</h2>
+            <img src="images/depositphotos_niño elefante_macoelefante.jpg" alt="niño con elefante">
+        </div>
+
+        <!-- caja 3 -->
+        <div class="caja" onclick="openmodal('modal3')">
+            <h2>3-> elefante grande</h2>
+            <img src="images/elefante_grande.jpg" alt="elefante grande">
+        </div>
+
+        <!-- caja 4 -->
+        <div class="caja" onclick="openmodal('modal4')">
+            <h2>4-> entrada del zoológico</h2>
+            <img src="images/entrada_zool.jpg" alt="entrada del zoológico">
+        </div>
+
+        <!-- caja 5 -->
+        <div class="caja" onclick="openmodal('modal5')">
+            <h2>5-> familia en el zoológico</h2>
+            <img src="images/familia_zoo.jpg" alt="familia en el zoológico">
+        </div>
+
+        <!-- caja 6 -->
+        <div class="caja" onclick="openmodal('modal6')">
+            <h2>6-> jirafas y niños</h2>
+            <img src="images/jirafas_y_niños.jpg" alt="jirafas y niños">
+        </div>
+
+        <!-- caja 7 -->
+        <div class="caja" onclick="openmodal('modal7')">
+            <h2>7-> mapa del zoológico</h2>
+            <img src="images/mapa_2zool.jpg" alt="mapa del zoológico">
+        </div>
+
+        <!-- caja 8 -->
+        <div class="caja" onclick="openmodal('modal8')">
+            <h2>8-> niños viendo jirafas</h2>
+            <img src="images/niños_viendo_jirafas.jpg" alt="niños viendo jirafas">
+        </div>
+
+        <!-- caja 9 -->
+        <div class="caja" onclick="openmodal('modal9')">
+            <h2>9-> niños y tigres</h2>
+            <img src="images/niños_y_tigres.jpg" alt="niños y tigres">
+        </div>
+
+        <!-- caja 10 -->
+        <div class="caja" onclick="openmodal('modal10')">
+            <h2>10-> tablero de animales</h2>
+            <img src="images/tablero_animales_zoo.jpg" alt="tablero de animales">
+        </div>
+
+        <!-- caja 11 -->
+        <div class="caja" onclick="openmodal('modal11')">
+            <h2>11-> logo del zoológico</h2>
+            <img src="images/logo.jpg" alt="logo del zoológico">
+        </div>
+    </main>
+
+    <!-- modales (ventanas emergentes) -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal1')">&times;</span>
+            <h2>animales cuidado y bienestar</h2>
+            <p><strong>evento especial:</strong>Apertura del nuevo recinto de cacos</p>
+            <p><strong>ultimas noticias:</strong>Iniciativas de cuidado animal.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal2')">&times;</span>
+            <h2>niño con elefante</h2>
+            <p><strong>evento especial:</strong> dia del fotografo con premios especiales.</p>
+            <p><strong>últimas noticias:</strong> nació una nueva cría de jirafa.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal3')">&times;</span>
+            <h2>elefante grande</h2>
+            <p><strong>evento especial:</strong> safari nocturno para familias.</p>
+            <p><strong>últimas noticias:</strong> iniciativas para proteger elefantes.</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal4')">&times;</span>
+            <h2>entrada del zoológico</h2>
+            <p><strong>evento especial:</strong> entrada gratuita para niños menores de 10 años.</p>
+            <p><strong>últimas noticias:</strong> renovaciones completadas en la entrada.</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal5')">&times;</span>
+            <h2>familia en el zoológico</h2>
+            <p><strong>evento especial:</strong> talleres interactivos para familias.</p>
+            <p><strong>últimas noticias:</strong> se amplió el área de juegos infantiles.</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal6')">&times;</span>
+            <h2>jirafas y niños</h2>
+            <p><strong>evento especial:</strong> descubre la elegancia de las jirafas.</p>
+            <p><strong>ultimas noticias:</strong> nueva cria de jirafa ha nacido en el zoologico.</p>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal7')">&times;</span>
+            <h2>mapa del zoológico</h2>
+            <p><strong>evento especial:</strong> nuevos recorridos interactivos disponibles.</p>
+            <p><strong>últimas noticias:</strong> se actualizó el mapa del parque.</p>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal8')">&times;</span>
+            <h2>niños viendo jirafas</h2>
+            <p><strong>evento especial:</strong> vive la experiencia educativa con nuestros cuidadores.</p>
+            <p><strong>últimas noticias:</strong> actividades educativas todos los sábados.</p>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal9')">&times;</span>
+            <h2>niños y tigres</h2>
+            <p><strong>evento especial:</strong> exhibición de tigres de bengala.</p>
+            <p><strong>últimas noticias:</strong> conoce nuestras iniciativas de conservación.</p>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal10')">&times;</span>
+            <h2>tablero de animales</h2>
+            <p><strong>evento especial:</strong> taller educativo sobre especies en peligro.</p>
+            <p><strong>últimas noticias:</strong> aprende sobre el cuidado de animales exóticos.</p>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal('modal11')">&times;</span>
+            <h2>logo del zoologico</h2>
+            <p><strong>evento especial:</strong> descuentos para grupos escolares.</p>
+            <p><strong>ultimas noticias:</strong> el zoologico celebra 50 años de historia.</p>
+        </div>
+    </div>
+
+	
+	<!-- Pie de la pagina-->
+    <footer>
+        <p>&copy; 2024 zoologico de lorica - todos los derechos reservados.</p>
+    </footer>
+
+	
+    <!-- codigo javascript -->
+    <script>
+        function openmodal(modalid) {
+            document.getElementById(modalid).style.display = 'block';
+        }
+
+        function closemodal(modalid) {
+            document.getElementById(modalid).style.display = 'none';
+        }
+    </script>
+	
+	
+</body>
+</html>
